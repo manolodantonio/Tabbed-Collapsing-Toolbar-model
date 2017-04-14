@@ -60,22 +60,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
     }
 
@@ -147,33 +137,33 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
-        public SectionsPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
-        }
-
-        @Override
-        public int getCount() {
-            // Show 10 total pages.
-            return 10;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-
-            return "Hello from section " + (position + 1);
-        }
-    }
+//    /**
+//     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+//     * one of the sections/tabs/pages.
+//     */
+//    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+//
+//        public SectionsPagerAdapter(FragmentManager fm) {
+//            super(fm);
+//        }
+//
+//        @Override
+//        public Fragment getItem(int position) {
+//            // getItem is called to instantiate the fragment for the given page.
+//            // Return a PlaceholderFragment (defined as a static inner class below).
+//            return PlaceholderFragment.newInstance(position + 1);
+//        }
+//
+//        @Override
+//        public int getCount() {
+//            // Show 10 total pages.
+//            return 10;
+//        }
+//
+//        @Override
+//        public CharSequence getPageTitle(int position) {
+//
+//            return "Hello from section " + (position + 1);
+//        }
+//    }
 }
